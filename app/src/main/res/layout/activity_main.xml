@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8394C1"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang Di BurgerQueen                    Selamat Berbelanja"
+        android:gravity="center"
+        android:textColor="#0C1FDA"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgBurger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp">
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Chicken Burger" />
+
+        <RadioButton
+            android:id="@+id/rbBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Beef Burger"/>
+
+        <RadioButton
+            android:id="@+id/rbVeggie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Veggie Burger"/>
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rgrMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuantity"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Regular" />
+
+        <RadioButton
+            android:id="@+id/rbSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Silver" />
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0C1FDA"
+            android:text="Gold" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgBurger"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Jumlah Burger yang ingin di pesan" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuantity"
+        android:layout_marginTop="201dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Pesan" />
+
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/chiken_burger" />
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/beef" />
+
+    <ImageView
+        android:layout_width="107dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/veggie" />
+
+
+
+</RelativeLayout>
